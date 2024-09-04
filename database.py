@@ -17,7 +17,8 @@ def init_db():
             time TEXT,
             calories INTEGER,
             total_calories INTEGER,
-            time_start TEXT
+            time_start TEXT,
+            first_mile_time TEXT
         )
     ''')
     conn.commit()
