@@ -28,5 +28,6 @@ class RunManagement(commands.Cog):
         conn.close()
         await ctx.send("Run logged successfully!")
     
-def setup(bot):
-    bot.add_cog(RunManagement(bot))
+async def setup(bot):
+    await bot.add_cog(RunManagement(bot))
+
